@@ -12,7 +12,7 @@ from googletrans import Translator, LANGUAGES
 from userge import userge, Message, Config
 
 
-@userge.on_cmd("tr", about={
+@borg.on(admin_cmd("tr", about={
     'header': "Translate the given text using Google Translate",
     'supported languages': dumps(LANGUAGES, indent=4, sort_keys=True),
     'usage': "from english to sinhala\n"
